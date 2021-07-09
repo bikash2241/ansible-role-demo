@@ -1,0 +1,8 @@
+  - name: This task to install httpd
+    yum:
+      name: httpd
+      state: latest
+  - name: This task to start the service
+    service: 
+       name: httpd
+       state: started
